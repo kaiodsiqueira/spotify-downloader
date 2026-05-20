@@ -368,7 +368,7 @@ DOWNLOADER_OPTIONS: DownloaderOptions = {
     "create_skip_file": False,
     "respect_skip_file": False,
     "sync_remove_lrc": False,
-    "max_songs": 100,
+    "max_songs": 1000,
 }
 
 WEB_OPTIONS: WebOptions = {
