@@ -343,6 +343,13 @@ def parse_output_options(parser: _ArgumentGroup):
     - parser: The argument parser to add the options to.
     """
 
+    # Add how many songs to limit argument
+    parser.add_argument(
+        "--max",
+        type=int,
+        help="The maximum number of songs to download.",
+    )
+
     # Add output format argument
     parser.add_argument(
         "--format",

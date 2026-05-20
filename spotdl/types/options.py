@@ -90,6 +90,7 @@ class DownloaderOptions(TypedDict):
     create_skip_file: Optional[bool]
     respect_skip_file: Optional[bool]
     sync_remove_lrc: Optional[bool]
+    max: int
 
 
 class WebOptions(TypedDict):

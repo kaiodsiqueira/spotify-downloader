@@ -29,6 +29,7 @@ def download(
         albums_to_ignore=downloader.settings["ignore_albums"],
         album_type=downloader.settings["album_type"],
         playlist_retain_track_cover=downloader.settings["playlist_retain_track_cover"],
+        max=downloader.settings["max"],
     )
 
     # Download the songs

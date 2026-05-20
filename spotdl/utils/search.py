@@ -123,6 +123,7 @@ def get_simple_songs(
     albums_to_ignore=None,
     album_type=None,
     playlist_retain_track_cover: bool = False,
+    max: int = 1000,
 ) -> List[Song]:
     """
     Parse query and return list containing simple song objects
@@ -352,7 +353,10 @@ def get_simple_songs(
 
     logger.debug("Found %s songs in %s lists", len(songs), len(lists))
 
-    return songs
+    if max != 1000:
+        print("limiting songs to: %s" % max)
+        
+    return songs[:max]
 
 
 def songs_from_albums(albums: List[str]):

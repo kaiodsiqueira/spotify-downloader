@@ -447,6 +447,8 @@ FFmpeg options:
                         Additional ffmpeg arguments passed as a string.
 
 Output options:
+  --max
+                        Limits how many songs will be downloaded
   --format {mp3,flac,ogg,opus,m4a,wav}
                         The format to download the song in.
   --save-file SAVE_FILE
